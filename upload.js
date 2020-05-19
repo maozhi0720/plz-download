@@ -12,9 +12,9 @@ const path = require('path');
 const { createClient } = require("webdav");
 
 
-const username = process.env.dav_username
-const password = process.env.dav_password
-const davPath = process.env.dav_url
+const username = process.env.dav_username = ‘admin’
+const password = process.env.dav_password ='000000'
+const davPath = process.env.dav_url ='http://47.94.230.222:8080/home.html'
 
 const client = createClient(
     davPath,{username, password}
